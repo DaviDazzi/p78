@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Projeto 78</title>
+    </head>
+    <body>
+        <h1>Read Dead Redemption 2</h1>
+        <img src="wp2614338.jpg" style="height:300px" id="rdr2">
+        <h2 id="characters"></h2>
+        <button onclick="update();">Próximo</button>
+        <script>
+            var images =
+            ["Arthur.jpg", "Dutch.jpg", "John.avif", "Micah.webp", "wp2614338.jpg"];
+            var array = ["Arthur", "Dutch", "John", "Micah", "Red Dead Redemption 2"];
+            var i = -1; 
+            function update(){
+                i++;
+                if(i> 4){
+                    i= 0;
+                };
+                document.getElementById("rdr2").src = images[i];
+                document.getElementById("characters").innerHTML = array[i]
+            }
+        </script>
+    </body>
+</html>
